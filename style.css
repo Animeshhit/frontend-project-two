@@ -409,7 +409,7 @@ header {
     padding-block: 0;
     padding-inline: 0;
   }
-  .swiper-slide{
+  .swiper-slide {
     margin-bottom: 3.5rem;
   }
 }
@@ -420,7 +420,6 @@ header {
   margin-top: 7rem;
   background-color: var(--primary-bright-red);
   padding-block: 4rem;
-  display: none; /*temp*/
 }
 .subFooter_container h1 {
   width: 50%;
@@ -436,7 +435,18 @@ header {
   color: var(--secondary-very-pale-red);
   background-color: var(--secondary-very-light-gray);
 }
-
+@media (max-width: 785px) {
+  .subFooter_container {
+    flex-direction: column;
+  }
+  .subFooter_container h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-subFooter {
+    margin-top: 2rem;
+  }
+}
 /* Footer  */
 
 footer {
