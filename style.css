@@ -240,7 +240,7 @@ header {
 
 .hero_section {
   margin-top: 2rem;
-  display: none; /*temp*/
+  overflow: hidden;
 }
 .hero_right {
   width: 40%;
@@ -254,6 +254,59 @@ header {
 }
 .btn-hero {
   margin-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .hero_container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .hero_left {
+    flex: 1;
+    text-align: center;
+    margin-top: 2rem;
+    padding-inline: 1rem;
+  }
+  .hero_left h1 {
+    font-size: 3.5rem;
+  }
+  .hero_left p {
+    padding-right: 0;
+  }
+  .hero_right {
+    flex: 1;
+    width: 100%;
+  }
+  .hero_right img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 2rem;
+  }
+}
+
+/* For mobile View  */
+
+@media (max-width: 780px) {
+  .hero_right img {
+    width: 80%;
+  }
+  .hero_left {
+    padding-inline: 0;
+  }
+  .hero_left h1 {
+    font-size: 3rem;
+  }
+}
+/* For Better Mobile View  */
+@media (max-width: 600px) {
+  .hero_right img {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .hero_left h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Different  */
