@@ -161,6 +161,23 @@
               from anywhere. It keeps the whole team in-sync without being intrusive.”
             </p>
           </div>
+          <div class="swiper-slide">
+            <img src="./images/avatar-anisha.png" alt="swiper_avter" />
+            <h2 class="heading-color">Anisha Li</h2>
+            <p class="paragraph-color">
+              “Manage has supercharged our team’s workflow. The ability to maintain
+              visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/avatar-ali.png" alt="swiper_avter" />
+            <h2 class="heading-color">Ali Bravo</h2>
+            <p class="paragraph-color">
+              “We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much
+              more focused.”
+            </p>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -244,9 +261,19 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 40,
+      slidesPerView: 1,
+      spaceBetween: 20,
       loop: true,
+      breakpoints: {
+        680: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        980: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

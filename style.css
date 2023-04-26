@@ -371,10 +371,6 @@ header {
 
 /* Testomonial  */
 
-.test_section {
-  display: none; /*temp*/
-}
-
 .text_section_container {
   margin-top: 4rem;
 }
@@ -390,6 +386,7 @@ header {
 }
 .swiper-slide {
   text-align: center;
+  width: 100%;
 }
 .swiper-slide img {
   width: 80px;
@@ -405,6 +402,16 @@ header {
   display: block;
   margin-top: 2rem;
   margin-inline: auto;
+}
+
+@media (max-width: 780px) {
+  .swiper {
+    padding-block: 0;
+    padding-inline: 0;
+  }
+  .swiper-slide{
+    margin-bottom: 3.5rem;
+  }
 }
 
 /* subFooter  */
