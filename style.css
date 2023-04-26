@@ -313,7 +313,6 @@ header {
 
 .differ_section {
   margin-top: 4rem;
-  display: none; /*temp*/
 }
 
 .differ_card {
@@ -343,6 +342,31 @@ header {
 .differ_paragraph {
   margin-top: 1.2rem;
   margin-left: 4rem;
+}
+
+@media (max-width: 900px) {
+  .differ_section {
+    margin-top: 6rem;
+  }
+  .differ_container {
+    flex-direction: column;
+  }
+  .differ_left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .differ_paragraph {
+    margin-left: 0;
+  }
+  .differ_header {
+    background: hsl(13, 100%, 96%);
+    border-radius: 3rem;
+  }
+  .differ_header span {
+    font-size: 1rem;
+  }
 }
 
 /* Testomonial  */
